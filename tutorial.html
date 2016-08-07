@@ -43,11 +43,11 @@
 
 <section class="main-content"> <h3>
 <a id="welcome-to-ct" class="anchor" href="#welcome-to-phydsl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Overview Visualization</h3>
-<p>2. Once the transformations have been loaded, ChainTracker will present an “Overview” visualization of the composition, you can click on the edges and the nodes of the composition to obtain details about all the metamodels, transformations, and generated files that correspond to the workspace configured in Step 1 (Figure 2 – Left) . </p>
+<p>2. Once the transformations have been loaded, ChainTracker will present an “Overview” visualization of the composition, you can click on the edges and the nodes of the composition to obtain details about all the metamodels, transformations, and generated files that correspond to the workspace configured in Step 1 (Fig. 2 – Left) . </p>
 
-<p>Furthermore, the “Code Viewers” will automatically open all the textual files loaded in the configuration. This includes transformations (M2M and M2T) and generated files (Figure 2 – Right). </p>
+<p>Furthermore, the “Code Viewers” will automatically open all the textual files loaded in the configuration. This includes transformations (M2M and M2T) and generated files (Fig. 2 – Right). </p>
 
-<p>Finally, the “Context Tables” will be filled with information as you interact with the visualization. Tables summarize information about the metamodels and the bindings that are connected with their elements (Figure 2 – Bottom, Figure 3)</p>
+<p>Finally, the “Context Tables” will be filled with information as you interact with the visualization. Tables summarize information about the metamodels and the bindings that are connected with their elements (Fig. 2 – Bottom, Fig. 3)</p>
 </section> 
 
 <img class="centered" src="res/tuto-c.png" alt="CT Header" align="middle"> <br>
@@ -79,7 +79,7 @@
 
 <p>In the case of metamodel elements the black dots contained in the boxes represent the element’s properties. Moreover, in the case of templates and generated files each dot represents template file numbers, and code line numbers, respectively.</p>
 
-<p>Finally, the “Context Tables” will be filled with information as you interact with the visualization. Tables summarize information about the metamodels and the bindings that are connected with their elements (Figure 2 – Bottom, Figure 3)</p>
+<p>Finally, the “Context Tables” will be filled with information as you interact with the visualization. Tables summarize information about the metamodels and the bindings that are connected with their elements (Fig. 2 – Bottom, Fig. 3)</p>
 </section> 
 
 <img class="centered" src="res/tuto-f.png" alt="CT Header" align="middle"> <br>
@@ -110,7 +110,7 @@
 <img class="centered" src="res/tuto-i.png" alt="CT Header" align="middle"> <br>
 
 <section class="main-content"> 
-<p>8. Sometimes it is useful to study a single binding from the visualization. You can select any binding and see where that binding is located in the script. Simply select a binding > Code Projections > Project Single Binding (Figure 8).</p>
+<p>8. Sometimes it is useful to study a single binding from the visualization. You can select any binding and see where that binding is located in the script. Simply select a binding > Code Projections > Project Single Binding (Fig. 8).</p>
 </section> 
 
 <img class="centered" src="res/tuto-j.png" alt="CT Header" align="middle"> <br>
@@ -127,16 +127,39 @@
 
 <img class="centered" src="res/tuto-l.png" alt="CT Header" align="middle"> <br>
 
-<section class="main-content"> <h3>
+<section class="main-content"> 
 <p>10. So far we have seen how we can use Code Projections to study model-to-model and model-to-text bindings. However, you can also use Code Projections to study generation bindings.</p>
 <p>10.1 For example, you can select templates in order to understand what lines of code they generate. This example has only one template “generateHTML”. Select generateHTML > Code Projections > Project Downstream Bindings (Fig. 11) </p>
 </section> 
 
-<section class="main-content"> <h3>
+<section class="main-content"> 
 <p>10. 2 You can also select individual generation bindings to study what specific line of code they generate. Select any generation binding that originates from generateHtml > Code Projections > Project Single Binding (Fig. 12).</p>
 </section> 
 
 <img class="centered" src="res/tuto-n.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> <h3>
+<a id="welcome-to-ct" class="anchor" href="#welcome-to-phydsl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Searching for Bindings Using Text Selection</h3>
+<p>11. Sometimes it is extremely helpful to look for bindings in a template or in a generated file. Think of “finding the origins of a generated line of code”. In ChainTracker you can achieve this by highlighting one or multiple lines in a template or in a generated file (using the Code Viewers) in order to see bindings related to them.</p>
+<p>11.1 For example, try selecting a few lines of code in the generated file “index.html” > Text Selection > See Upstream Related Elements (Fig 13).</p>
+</section> 
+
+<img class="centered" src="res/tuto-o.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> <h3>
+<a id="welcome-to-ct" class="anchor" href="#welcome-to-phydsl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Searching for Bindings Using Text Selection</h3>
+<p>As a result you will see all the bindings found in the file highlighted in the code viewer. Moreover, the visualization will show you the related elements to the generation of that specific set of lines (Fig. 14).</p>
+</section> 
+
+<img class="centered" src="res/tuto-p.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> <h3>
+<a id="welcome-to-ct" class="anchor" href="#welcome-to-phydsl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Searching for Bindings Using Text Selection</h3>
+<p>12. This feature is also available when selecting lines in a code template. This helps developers to understand the metamodel dependencies of a template line considering all the previous (upstream) transformations and metamodel in the composition.</p>
+<p>12.1 For example, select any line (or a block of lines) in generateHTML > Text Selection > See Upstream Related Elements (Fig. 15)</p>
+</section> 
+
+<img class="centered" src="res/tuto-q.png" alt="CT Header" align="middle"> <br>
 
 <section class="main-content">
       <footer class="site-footer">
