@@ -66,11 +66,8 @@
 
 <section class="main-content"> 
 <p>4. By clicking on the edges of the visualization you can obtain information about the transformation rules that are contained in a M2M transformation script (Fig. 4.a).</p>
-
 <p>In the case of edges that represent M2T transformations information about the template modules will be displayed (Fig. 4.b).</p>
-
 <p>Furthermore, in the case of edges that represent generation of files from templates, information about the name of the files will be presented (Fig 4.c).</p>
-
 <p>- “Total Coverage” reflects on the percentage of elements that are neither created nor used by transformations.</p>
 </section> 
 
@@ -99,12 +96,47 @@
 <img class="centered" src="res/tuto-g.png" alt="CT Header" align="middle"> <br>
 
 <section class="main-content"> <h3>
-<a id="welcome-to-ct" class="anchor" href="#welcome-to-phydsl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Element Filters</h3>
+<a id="welcome-to-ct" class="anchor" href="#welcome-to-phydsl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Projections</h3>
 <p>7. You can use code projections in order to study the bindings that originate one or multiple artifacts. For example, select the Book!Book metamodel element > Code Projections > Project Downstream Bindings (Fig. 6).</p>
 <p>You will see in the Code Viewer the bindings that are downstream related to a selected metamodel element. Implicit bindings are highlighted in red, explicit bindings are highlighted in green. The target properties are highlighted in blue.</p>
 </section> 
 
 <img class="centered" src="res/tuto-h.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> 
+<p>7.1 You can also use Code Projections in order to study the bindings are originated by one or multiple artefacts. For example, select the Publication!Database element > Code Projections > Project Upstream Bindings (Fig. 7). </p>
+</section> 
+
+<img class="centered" src="res/tuto-i.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> 
+<p>8. Sometimes it is useful to study a single binding from the visualization. You can select any binding and see where that binding is located in the script. Simply select a binding > Code Projections > Project Single Binding (Figure 8).</p>
+</section> 
+
+<img class="centered" src="res/tuto-j.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> 
+<p>9. Code Projections are not limited to model-to-model bindings. You can study model-to-text bindings to understand how metamodels are used in a template by selecting a metamodel element that is used by a template, such as Publication!Publication > Code Projections > Project Downstream Bindings (Fig. 9).</p>
+</section> 
+
+<img class="centered" src="res/tuto-k.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> 
+<p>9.1 You can also study individual model-to-text bindings to understand how metamodels are used by individual lines in a template. For example, select the only binding coming from Publication!Database > Code Projections > Project Downstream Bindings (Fig. 10).</p>
+</section> 
+
+<img class="centered" src="res/tuto-l.png" alt="CT Header" align="middle"> <br>
+
+<section class="main-content"> <h3>
+<p>10. So far we have seen how we can use Code Projections to study model-to-model and model-to-text bindings. However, you can also use Code Projections to study generation bindings.</p>
+<p>10.1 For example, you can select templates in order to understand what lines of code they generate. This example has only one template “generateHTML”. Select generateHTML > Code Projections > Project Downstream Bindings (Fig. 11) </p>
+</section> 
+
+<section class="main-content"> <h3>
+<p>10. 2 You can also select individual generation bindings to study what specific line of code they generate. Select any generation binding that originates from generateHtml > Code Projections > Project Single Binding (Fig. 12).</p>
+</section> 
+
+<img class="centered" src="res/tuto-n.png" alt="CT Header" align="middle"> <br>
 
 <section class="main-content">
       <footer class="site-footer">
